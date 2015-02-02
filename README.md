@@ -1,4 +1,4 @@
-# TwoInOneSlider
+# Two in one slider plugin
 A small JavaScript plugin to see two images in a single container.
 
 
