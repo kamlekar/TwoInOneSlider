@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Two in one slider demo</title>
+        <script type="text/javascript" src="twoinone.js"></script>
+        <script>
+        	window.onload = function(){
+				var main = document.querySelector('.main');
+				twoInOneSlider.init(main);
+			}
+		</script>
+		<style>
+			.main {
+			    width: 200px;
+			    height: 200px;
+			    overflow: hidden;
+			    position: relative;
+			}
+			.one {
+			    background-image: url('http://www.lorempixel.com/200/200');
+			    width: 50%;
+			    height: 100%;
+			}
+			.two {
+			    background-image: url('http://www.lorempixel.com/200/200/sports');
+			    position: absolute;
+			    left: 0;
+			    right: 0px;
+			    top: 0px;
+			    bottom: 0px;
+			    background-position: right;
+			}
+			[data-2in1-separator] {
+			    width: 5px;
+			    top: 0px;
+			    bottom: 0px;
+			    position: absolute;
+			    background-color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main">
+		    <div class="one"></div>
+		    <div class="two"></div>
+		</div>
+	</body>
+</html>
